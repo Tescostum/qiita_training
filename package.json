@@ -1,0 +1,9 @@
+{
+  "name": "qiita_training",
+  "version": "1.0.0",
+  "description": "テスト",
+  "main": "index.js",
+  "repository": "git@github.com:Tescostum/qiita_training.git",
+  "author": "tescostum",
+  "license": "MIT"
+}

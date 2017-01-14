@@ -14,7 +14,7 @@ module.exports = function(config) {
 
     plugins: [
       require('karma-jasmine'),
-      require('karma-chrome-launcher'),
+      require('karma-phantomjs-launcher'),
       require('karma-jasmine-html-reporter')
     ],
 
@@ -34,6 +34,7 @@ module.exports = function(config) {
 
     files: [
       // System.js for module loading
+      'node_modules/systemjs/dist/system-polyfills.src.js',
       'node_modules/systemjs/dist/system.src.js',
 
       // Polyfills
@@ -88,11 +89,11 @@ module.exports = function(config) {
     preprocessors: {},
     reporters: ['progress', 'kjhtml'],
 
-    port: 9876,
+    port: 8081,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     singleRun: false
   })
 }

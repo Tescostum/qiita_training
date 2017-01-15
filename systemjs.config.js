@@ -12,6 +12,7 @@
     map: {
       // our app is within the app folder
       app: 'app',
+      "app/keys": "app/keys",
 
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
